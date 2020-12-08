@@ -134,6 +134,8 @@ h5{
 
 .acemo{
 	font-family: 'pilowlava-regular';
+    cursor: none;
+
 }
 
 .acemo:hover{
@@ -142,6 +144,8 @@ h5{
 
 .namasenda{
 	font-family: 'le_murmureregular';
+    cursor: none;
+
 }
 
 .namasenda:hover{
@@ -150,6 +154,8 @@ h5{
 
 .moma-ready{
 	font-family: 'montchauvemedium';
+    cursor: none;
+
 }
 
 .moma-ready:hover{
@@ -158,6 +164,8 @@ h5{
 
 .moire{
 	font-family: 'resistanceregular';
+    cursor: none;
+
 }
 .moire:hover{
 	color:#7D7D7D;
@@ -165,6 +173,7 @@ h5{
 
 .kush-jones{
 	font-family: 'vtf_mixoregular';
+    cursor: pointer;
 }
 
 .kush-jones:hover{
@@ -173,6 +182,8 @@ h5{
 
 .patten{
 	font-family: 'mainzmedium';
+    cursor: none;
+
 }
 
 .patten:hover{
@@ -199,7 +210,14 @@ h5{
     transform: translateX(calc((100% - 100vw) / 2));
 }
 
-
+#canvas1{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    } 
 
 h1{
 	font-size: 6vw;
@@ -321,6 +339,23 @@ h2 {
   cursor: pointer;
 }
 
+h2:hover {
+  display: block;
+  position: relative;
+  top: 42%;
+  text-align: center;
+  font-family: "cantique-normal";
+  font-size: 6vw;
+  overflow: hidden;
+  background: linear-gradient(90deg, #1C00ff00, #ffff00, #1C00ff00);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
 @keyframes animate {
   0% {
     background-position: -500%;
@@ -329,7 +364,6 @@ h2 {
     background-position: 500%;
   }
 }
-
 
 
 
