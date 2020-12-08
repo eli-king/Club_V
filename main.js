@@ -32,7 +32,7 @@ function namasendaVid(){
 }
 
 function momareadyVid(){
-    document.getElementById("artist-vid").setAttribute('src', "vids/moma-ready_43.mov");
+    document.getElementById("artist-vid").setAttribute('src', "https://storage.googleapis.com/eking_homework8/moma-ready_43.mov");
 }
 
 function moireVid(){
@@ -40,9 +40,9 @@ function moireVid(){
 }
 
 function kushJonesVid(){
-    document.getElementById("artist-vid").setAttribute('src', "vids/kush-jones_live.mov");
+    document.getElementById("artist-vid").setAttribute('src', "https://storage.googleapis.com/eking_homework8/kush-jones_live.mov");
 }
 
 function pattenVid(){
-    document.getElementById("artist-vid").setAttribute('src', "vids/patten_horror.mov");
+    document.getElementById("artist-vid").setAttribute('src', "https://storage.googleapis.com/eking_homework8/patten_horror.mov");
 }
