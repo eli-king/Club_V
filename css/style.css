@@ -180,6 +180,19 @@ h5{
 	color:#04510F;
 }
 
+.kush-jones-title{
+	font-family: 'Raleway';
+    font-weight: 1000;
+    letter-spacing: -8px;
+}
+
+h4{
+  font-family: "Raleway";
+  font-size: 1.5vw;
+  color: white;
+
+}
+
 .patten{
 	font-family: 'mainzmedium';
     cursor: none;
@@ -308,6 +321,51 @@ h1{
   backdrop-filter: blur(30px);
 }
 
+#fadeOut {  
+  position: fixed; 
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: fOut 15s 18s forwards;
+}
+
+@keyframes fOut {
+    from{opacity:100} 
+    to{opacity:0}
+}
+
+#fadeIn {  
+  opacity: 0;
+  animation: fIn 15s 18s forwards;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  border-radius: 25px;
+  padding: 1.5vw;
+  backdrop-filter: blur(30px);
+}
+
+@keyframes fIn {
+    from{opacity:0} 
+    to{opacity:100}
+}
+
+p{
+    color: dimgray;
+}
+
+iframe{
+    height: 10vh;
+    width: inherit;
+    border: none;
+    padding-bottom: 2vh;
+    padding-top: 1vh;
+
+}
+
 /*===================*/
 /* Shining Text Animation Effect from FrankieDoodle on CodePen
 /*===================*/
@@ -366,5 +424,11 @@ h2:hover {
 }
 
 
+.w3-animate-opacity{
+    animation:opac 2.5s
+}
 
-.w3-animate-opacity{animation:opac 2.5s}@keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{
+    from{opacity:0} 
+    to{opacity:1}
+}

@@ -47,6 +47,7 @@ function pattenVid(){
     document.getElementById("artist-vid").setAttribute('src', "https://storage.googleapis.com/eking_homework8/patten_horror.mov");
 }
 
+
 //Created by https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ Frank's Laboratory @2020.
 
 const image = new Image();
@@ -137,3 +138,5 @@ image.addEventListener('load', function(){
     }
 
 });
+
+
