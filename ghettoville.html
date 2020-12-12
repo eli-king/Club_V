@@ -1,100 +1,105 @@
 <html>
- <head>
-	<title>Club V - Ghettoville</title>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
+<head>
+    <title>Club V - Ghettoville</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="assets/main.js"></script>
 
+</head>
 
-	<link rel = "stylesheet" href="css/style.css">
-	 
-	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type = "text/javascript" src = "main.js"></script>
+<body>
+    <!-- Falling dots background -->
+    <div>
+        <canvas id="canvas1"></canvas>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <!-- Site circle logo -->
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="50" fill="white" />
+            </svg>
+            <!-- Navigation +/- -->
+            <div id="section">
+                <button onclick="toggleNav()" id="plusMinus">
+                    <svg aria-hidden="true" class="icon icon--type-cog" width="16" height="16" role="img" version="1.1" viewBox="0 0 64 64">
+                        <rect class="horizontal" y="28" width="64" height="7" fill="white" />
+                        <rect class="vertical" x="28" width="7" height="64" fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Navigation links -->
+        <div class="w3-animate-opacity" id="navLinks">
+            <div class="col-xl-2 navLink">
+                <a href="home.html">
+                    <h5>HOME</h5>
+                </a>
+            </div>
+            <div class="col-xl-2 navLink">
+                <h5>NEWS</h5>
+            </div>
+            <div class="col-xl-2 navLink">
+                <h5>VIDEOS</h5>
+            </div>
+            <div class="col-xl-2 navLink">
+                <h5>MUSIC</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Writing Content -->
+        <div class="col-xl-6 offset-xl-3" id="fadeIn">
+            <h1 class="kush-jones-title">GHETTOVILLE</h1>
+            <h4> An Ode to Forgotten Black Geometries</h4>
+            <p>Do you ever walk the streets you grew up on? Pristine sidewalks now overgrown with weeds and detritus. The once lively dollar stores where you’d excitedly beg your parents to grab a toy or piece of candy morphed into a sunken hole in the wall. To observe your beginnings as ash can be quite a haunted feeling and Ghettoville takes this feeling to its terminal conclusion; a siren cry for spaces displaced.</p>
 
-  </head>
-  <body>
+            <p>Darren Cunningham’s 2014 masterwork, Ghettoville, is a stark reflection of a time that once reveled in the advancement of modernity irrevocably shattered. In the UK, the 90’s brought a hopefulness spitting out an encyclopedia’s worth of dance genres annually and Labour winning in a landslide victory once shined a ray of light toward the bleak horizon of the future. But as the 2000’s waned and we now look back on the 2010’s, the cracks that began to show not only fractured completely but swallowed any notion of hope towards a brighter tomorrow. Sea levels rising, bushfire engulfing the Australian landscape, Brexit marching ever onward, and the Forever War becoming the topic du jour; art nowadays finds itself to be in dialog, sub-consciously or otherwise, about this greying of once blue skies.</p>
 
-     <div id = "fadeOutt">
-      <canvas id="canvas1" ></canvas>
-     </div>
-      <div class = "row" >
-          <div class = "col-xl-3">
-              <svg width = "100" height = "100" >
-                  <circle cx = "50" cy = "50" r = "50" fill = "white"/>
-              </svg>
-              <div id= "section">
-                  <button onclick = "toggleNav()" id = "plusMinus">
-                      <svg aria-hidden="true" class="icon icon--type-cog" width="16" height="16" role="img" version="1.1" viewBox="0 0 64 64">
-                      <rect class="horizontal" y="28" width="64" height="7" fill = "white"/>
-                      <rect class="vertical" x="28" width="7" height="64" fill = "white"/>
-                      </svg>
-                  </button>
-              </div>
-          </div>
-              <div class = "w3-animate-opacity" id = "navLinks" >
-                  <div class = "col-xl-2 navLink">
-                      <a href="home.html"><h5>HOME</h5></a>
-                  </div>
-                  <div class = "col-xl-2 navLink">
-                      <h5>NEWS</h5>
-                  </div>
-                  <div class = "col-xl-2 navLink">
-                      <h5>VIDEOS</h5>
-                  </div>
-                  <div class = "col-xl-2 navLink">
-                      <h5>MUSIC</h5>
-                  </div>
-              </div>
-          </div>
-          <div class  = "row" >
-              <div class = "col-xl-6 offset-xl-3" id = "fadeIn">
-                  <h1 class = "kush-jones-title">GHETTOVILLE</h1>
-                  <h4> An Ode to Forgotten Black Geometries</h4>
-                  <p>Do you ever walk the streets you grew up on? Pristine sidewalks now overgrown with weeds and detritus. The once lively dollar stores where you’d excitedly beg your parents to grab a toy or piece of candy morphed into a sunken hole in the wall. To observe your beginnings as ash can be quite a haunted feeling and Ghettoville takes this feeling to its terminal conclusion; a siren cry for spaces displaced.</p>
+            <iframe src="https://www.youtube.com/embed/jWuN9zExW-w"></iframe>
 
-                  <p>Darren Cunningham’s 2014 masterwork, Ghettoville, is a stark reflection of a time that once reveled in the advancement of modernity irrevocably shattered. In the UK, the 90’s brought a hopefulness spitting out an encyclopedia’s worth of dance genres annually and Labour winning in a landslide victory once shined a ray of light toward the bleak horizon of the future. But as the 2000’s waned and we now look back on the 2010’s, the cracks that began to show not only fractured completely but swallowed any notion of hope towards a brighter tomorrow. Sea levels rising, bushfire engulfing the Australian landscape, Brexit marching ever onward, and the Forever War becoming the topic du jour; art nowadays finds itself to be in dialog, sub-consciously or otherwise, about this greying of once blue skies.</p>
-                  
-                  <iframe src="https://www.youtube.com/embed/jWuN9zExW-w"></iframe>
-                  
-                  <p>But it’s Cunningham’s 2014 techno funeral dirge double album that questions that very notion and proposes a different context: weren’t those grey skies already here and if so, for whom?</p>
-                  
-                  <p>The dialog that Ghettoville contends with can be approached on nearly level: the cover art of a muddied array of shapes and sketches that seem to be collapsing in front of your eyes, the sound design enrapturing you in glimmers of various windows of blurred glass looking out to the inner city, the song titles give way to allusion of feelings, moments, and what lies behind you after the end of the history.</p>
-                  
-                  <p>Albeit mostly voiceless, these titles allude to lush stories within mostly voiceless pieces. The back to back suite of “Corner” and “Rims” communicates a world-building ethos which sets the tones for the rest of the project. The corner, a territory of which Black culture has coined wholesale has its own, is an upbeat tune with even a small screwed-up “Yeah” every bar or so; giving the album fleeting wisps of swagger within desolation. These moments glides effortlessly into “Rims”, a track with a bouncy baseline worth riding around with but realizing the radio about to die and the neighborhood you’re riding around is a big shell of overgrown car-washes and seemingly bombed out barbershops once holding life and love for its people now all displaced.</p>
-                  
-                  <p>The titles and track names relate to tangible, geographic elements remembering that culture and place are inseparable and when they are extracted from each other, a fallacy is created. This fallacy shows up in music festivals or at live shows with the poetry spoken on stage falling onto a listener that could never truly understand what is being told to them. Such a fallacy has been seen for what is it by some artists such as NoName, who said that she’d no longer do shows for predominately white audiences. This apparent lack of dialog comes about when the people and place the work is for no longer plays a role in the system for where to work lies within. “For Them, By Us” doesn’t really roll off the tongue.</p>
-                  
-                  <p>Tracks 6 and 10, “Birdcage” and “Gaze” respectively, is what the outside world may see of Black culture when observed from the outside in. Both tracks easily provide the most energy for an album otherwise on life support. The title “Birdcage” supplants this track in the lineage of Maya Angelou’s writing and although some may think they know why the caged bird sings, if you’ve never been in that cage yourself it’ll only be a hollowed understanding.</p>
-                  
-                  <iframe src="https://www.youtube.com/embed/PXQnH_ieLn8"></iframe>
-                  
-                  <p>That is of course, if you don’t wait until after the credits with the Japanese bonus track. The idea of Japanese bonus track began decades ago has many CD sellers in Japan realized it was more inexpensive to pirate or import CD’s from countries so the music industry as a whole started incentivizing purchasing Japan’s own CDs by including a bonus track or two. The hope was that Japanese fans would wait and pay more for the local CD than the cheaper import. Boards of Canada’s 2002 magnum opus Geogaddi’s Japanese bonus track “From One Source All Things Depends”, provides an uplifted new ending to what is otherwise a deeply pagan-occult-eerie record. The closer samples an interview of various kids being asked who is god to them. Some say “he’s a big fat man in the air and you can’t see him!” while others speak of him conceptually, but it’s the last boy with the response, “…he’s not though, what – a lot of people think he’s just a feeling – but I think he’s a real person…”. For a record has a running time of 1 hour 6 minutes and 6 seconds, and track titles as “The Devil is In the Details” and “Beware the Friendly Stranger”, such a warm ending feels more complete than the 2 minute nihilistic coda of digital silence of “Magic Window”. </p>
-                  
-                  <p>However, the anthesis occurs on Ghettoville with the ending track no longer being the bit of sunshine that is “Rule”, but the eight-minute death-final-finale “Grey Over Blue”. “Grey Over Blue” is the musical equivalent of watching an animal die in an empty forest. If there’s a pulse, it only returns diminished results with each cycle. It’s an ending sequence that feels like an aerial shot of the lifeless city we just hobbled through for the past two hours. Without resource or aid, forgotten with no forgiveness. Where “Rule” may be the ending we want, “Grey Over Blue” is the ending that lies in front of us. Ever encroaching on its fate in becoming the present.</p>
-                  
-                  <iframe src = "https://www.youtube.com/embed/lWYJA50SaXo"></iframe>
-    
-                  <p>Ghettoville is a blueprint for how it recontextualize techno by placing a magnifying glass on the landscape from which it was taken away from. It examines the unexamined, giving attention (and in turn humanity) to the forgotten. It gives a proper eulogy to the body of Black dance music tossed overboard by the Ibizas and Coachellas of the world. The album is steeped in homage to these victims of revisional history. “Grey Over Blue” is a literal reversal of “Blue Over Gray”, a 1998 DJ Screw album (which opens with a 8 mins meditative track). “Rap”, the lone single from Ghettoville, was touted by various online outlets to be a vaporware track but this is merely another version of cultural erasure. It’s a screwed-up track in every sense of the word but with the internet’s constant bout of amnesia, the current history is that Cunningham is merely biting a 2012 internet genre and not giving praise to Black artists and structures before him. “Rap” plays with homonyms alluding to double entendre, “Wrap/Rap yourself around me”. Which word do we decide the vocalist wants us to do? Do we give in to their ask of consuming them or do we narrativize them until their story is ours? Is there a difference between to two?</p>
-   
-                  <iframe src = "https://www.youtube.com/embed/q5ERDAI5Iww"></iframe>
-                                
-                  <p>The aforementioned track “Gaze” continues to be the crown jewel of this concept, how most people experience techno do so with an abstracted gaze. The song itself being this idea at its core as “Gaze” is but a sample of an older actress tune, “Point and Gaze”; a second-order distancing act to gaze upon “Gaze” itself. A gaze that can never be switched for the real thing no matter how close you think you are to it.</p>
-                  
-                  <iframe src = "https://www.youtube.com/embed/UHXGwFZQL5w"></iframe>
-                                                  
-                  <p>Thankfully since 2014, many people have been carrying the torch of letting others know about this gaze. Artist and writer, Deforrest Brown Jr. gives even more light to the once forgotten fact that Techno is for and by Black people or with crews such as Discwoman, doing an annual festival known as Dweller where Black techno artists come together to uplift and amplify each other in what is an otherwise deeply whitewashed industry.</p>
-                                                  
-                  <p>To finally start fixing our ills is to not only look intimately at our environment but to hold those who caused it accountable. Ghettoville allows us to observe and to become complicit in our past, present, and future. An ode to the spaces, materials, and shapes that Black people create and subsequently get torn apart from. The corner depopulates, the rims rust, the birdcage vacant. What a space sounds like once you remove all the physical material that made the system what it was. I’ll end with the press release that came before the album’s release 6 years ago this month. Happy birthday Ghettoville, may your death live on forever.</p>  
-                  
-                  <a href = "https://dwellerforever.blog/2020/05/08/ghettoville/"> RC - May 8th</a>
+            <p>But it’s Cunningham’s 2014 techno funeral dirge double album that questions that very notion and proposes a different context: weren’t those grey skies already here and if so, for whom?</p>
 
-              </div>
-          </div>
-    </body>
-</html>
+            <p>The dialog that Ghettoville contends with can be approached on nearly level: the cover art of a muddied array of shapes and sketches that seem to be collapsing in front of your eyes, the sound design enrapturing you in glimmers of various windows of blurred glass looking out to the inner city, the song titles give way to allusion of feelings, moments, and what lies behind you after the end of the history.</p>
+
+            <p>Albeit mostly voiceless, these titles allude to lush stories within mostly voiceless pieces. The back to back suite of “Corner” and “Rims” communicates a world-building ethos which sets the tones for the rest of the project. The corner, a territory of which Black culture has coined wholesale has its own, is an upbeat tune with even a small screwed-up “Yeah” every bar or so; giving the album fleeting wisps of swagger within desolation. These moments glides effortlessly into “Rims”, a track with a bouncy baseline worth riding around with but realizing the radio about to die and the neighborhood you’re riding around is a big shell of overgrown car-washes and seemingly bombed out barbershops once holding life and love for its people now all displaced.</p>
+
+            <p>The titles and track names relate to tangible, geographic elements remembering that culture and place are inseparable and when they are extracted from each other, a fallacy is created. This fallacy shows up in music festivals or at live shows with the poetry spoken on stage falling onto a listener that could never truly understand what is being told to them. Such a fallacy has been seen for what is it by some artists such as NoName, who said that she’d no longer do shows for predominately white audiences. This apparent lack of dialog comes about when the people and place the work is for no longer plays a role in the system for where to work lies within. “For Them, By Us” doesn’t really roll off the tongue.</p>
+
+            <p>Tracks 6 and 10, “Birdcage” and “Gaze” respectively, is what the outside world may see of Black culture when observed from the outside in. Both tracks easily provide the most energy for an album otherwise on life support. The title “Birdcage” supplants this track in the lineage of Maya Angelou’s writing and although some may think they know why the caged bird sings, if you’ve never been in that cage yourself it’ll only be a hollowed understanding.</p>
+
+            <iframe src="https://www.youtube.com/embed/PXQnH_ieLn8"></iframe>
+
+            <p>That is of course, if you don’t wait until after the credits with the Japanese bonus track. The idea of Japanese bonus track began decades ago has many CD sellers in Japan realized it was more inexpensive to pirate or import CD’s from countries so the music industry as a whole started incentivizing purchasing Japan’s own CDs by including a bonus track or two. The hope was that Japanese fans would wait and pay more for the local CD than the cheaper import. Boards of Canada’s 2002 magnum opus Geogaddi’s Japanese bonus track “From One Source All Things Depends”, provides an uplifted new ending to what is otherwise a deeply pagan-occult-eerie record. The closer samples an interview of various kids being asked who is god to them. Some say “he’s a big fat man in the air and you can’t see him!” while others speak of him conceptually, but it’s the last boy with the response, “…he’s not though, what – a lot of people think he’s just a feeling – but I think he’s a real person…”. For a record has a running time of 1 hour 6 minutes and 6 seconds, and track titles as “The Devil is In the Details” and “Beware the Friendly Stranger”, such a warm ending feels more complete than the 2 minute nihilistic coda of digital silence of “Magic Window”. </p>
+
+            <p>However, the anthesis occurs on Ghettoville with the ending track no longer being the bit of sunshine that is “Rule”, but the eight-minute death-final-finale “Grey Over Blue”. “Grey Over Blue” is the musical equivalent of watching an animal die in an empty forest. If there’s a pulse, it only returns diminished results with each cycle. It’s an ending sequence that feels like an aerial shot of the lifeless city we just hobbled through for the past two hours. Without resource or aid, forgotten with no forgiveness. Where “Rule” may be the ending we want, “Grey Over Blue” is the ending that lies in front of us. Ever encroaching on its fate in becoming the present.</p>
+
+            <iframe src="https://www.youtube.com/embed/lWYJA50SaXo"></iframe>
+
+            <p>Ghettoville is a blueprint for how it recontextualize techno by placing a magnifying glass on the landscape from which it was taken away from. It examines the unexamined, giving attention (and in turn humanity) to the forgotten. It gives a proper eulogy to the body of Black dance music tossed overboard by the Ibizas and Coachellas of the world. The album is steeped in homage to these victims of revisional history. “Grey Over Blue” is a literal reversal of “Blue Over Gray”, a 1998 DJ Screw album (which opens with a 8 mins meditative track). “Rap”, the lone single from Ghettoville, was touted by various online outlets to be a vaporware track but this is merely another version of cultural erasure. It’s a screwed-up track in every sense of the word but with the internet’s constant bout of amnesia, the current history is that Cunningham is merely biting a 2012 internet genre and not giving praise to Black artists and structures before him. “Rap” plays with homonyms alluding to double entendre, “Wrap/Rap yourself around me”. Which word do we decide the vocalist wants us to do? Do we give in to their ask of consuming them or do we narrativize them until their story is ours? Is there a difference between to two?</p>
+
+            <iframe src="https://www.youtube.com/embed/q5ERDAI5Iww"></iframe>
+
+            <p>The aforementioned track “Gaze” continues to be the crown jewel of this concept, how most people experience techno do so with an abstracted gaze. The song itself being this idea at its core as “Gaze” is but a sample of an older actress tune, “Point and Gaze”; a second-order distancing act to gaze upon “Gaze” itself. A gaze that can never be switched for the real thing no matter how close you think you are to it.</p>
+
+            <iframe src="https://www.youtube.com/embed/UHXGwFZQL5w"></iframe>
+
+            <p>Thankfully since 2014, many people have been carrying the torch of letting others know about this gaze. Artist and writer, Deforrest Brown Jr. gives even more light to the once forgotten fact that Techno is for and by Black people or with crews such as Discwoman, doing an annual festival known as Dweller where Black techno artists come together to uplift and amplify each other in what is an otherwise deeply whitewashed industry.</p>
+
+            <p>To finally start fixing our ills is to not only look intimately at our environment but to hold those who caused it accountable. Ghettoville allows us to observe and to become complicit in our past, present, and future. An ode to the spaces, materials, and shapes that Black people create and subsequently get torn apart from. The corner depopulates, the rims rust, the birdcage vacant. What a space sounds like once you remove all the physical material that made the system what it was. I’ll end with the press release that came before the album’s release 6 years ago this month. Happy birthday Ghettoville, may your death live on forever.</p>
+
+            <a href="https://dwellerforever.blog/2020/05/08/ghettoville/"> RC - May 8th</a>
+
+        </div>
+    </div>
+</body></html>
